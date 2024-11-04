@@ -32,7 +32,6 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var warningBanner = document.querySelector("#unity-warning");
 
-      //comment for good measures
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
@@ -58,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PortfolioHost.loader.js";
+      var loaderUrl = buildUrl + "/PortfolioHostV2.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PortfolioHost.data",
-        frameworkUrl: buildUrl + "/PortfolioHost.framework.js",
-        codeUrl: buildUrl + "/PortfolioHost.wasm",
+        dataUrl: buildUrl + "/PortfolioHostV2.data.unityweb",
+        frameworkUrl: buildUrl + "/PortfolioHostV2.framework.js.unityweb",
+        codeUrl: buildUrl + "/PortfolioHostV2.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ShiningPotionStudios",
         productName: "Portfolio 2D Game",
